@@ -45,6 +45,7 @@ header samp{
 .img-responsive{
     max-width: 100%;
     padding: 1rem;
+    
 }
 .section-div{
     animation: inicializar 7s forwards;
@@ -135,4 +136,118 @@ main{
     grid-column: 1/-1;
     text-align: center;
     color: #000;
+}
+
+.sobre_titulo h1{
+    font-size:2.5rem;
+    color :#192418;
+    margin-bottom: 15px;
+    font-family: "Berkshire Swash", cursive;
+}
+
+.fa-circle-info{
+    color: #192418;
+     padding: 2px;
+}
+
+.sobre_titulo  .buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 2px;
+}
+.buttons span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #0e7902ad;
+}
+
+.sobre img{ /*Essa transição desfoca um pouco a imagem*/ 
+    animation: lado_secao 5s ease-in-out forwards;
+    cursor: pointer;
+    grid:2;
+    max-width: 100%;
+    border-radius: 4px;
+    filter: blur(0);
+}
+.sobre img:hover{
+    transition: .5s ease-in;
+    filter: blur(1px);
+}
+
+.sobre_conteudo{
+    animation: sobe_secao .6s ease-in-out forwards;
+    grid-column: 2/-1;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    color: #000000c5;
+    
+}
+
+.sobre_texto{
+    display:grid;
+    grid-column:1/-1;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.sobre_texto h1{
+    font-size:2.3rem;
+    color: #002540;
+    grid-column: 1/-1;
+}
+.sobre_texto h1::after{
+    background-color:#0e7902ad;
+    height: 6px;
+    width: 60px;
+    margin: 20px;
+    content: "";
+    display: block;
+    border-radius: 5px;
+}
+.sobre_texto p{
+    font-size: 1.3rem;
+    grid-column: 1/-1;
+}
+
+.sobre_info{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+}
+
+.sobre_info i{
+    color: #0e7902ad;
+    display: inline-block;
+    padding-right: 15px;
+    font-size:1.5rem;
+}
+.sobre_info p{
+    font-size:.9rem;
+}
+
+@keyframes sobe_secao {
+    from {
+        transition: .5s; 
+        transform: translate3d(60px, 0, 0);
+    }
+    to { 
+        transform: translate3d(0, 0, 0);
+    }
+    
+}
+
+@keyframes lado_secao {
+    from {
+        transition: .5s; 
+        transform: translate3d(-60px, 0, 0);
+    }
+    to { 
+        transform: translate3d(0, 0, 0);
+    }
+    
 }
