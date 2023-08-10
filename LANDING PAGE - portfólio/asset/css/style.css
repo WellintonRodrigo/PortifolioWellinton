@@ -19,7 +19,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #5c615d;
+    background-color: #005155;
 }
 header h1{
     color:rgba(16, 16, 16, 0.6);
@@ -45,6 +45,7 @@ header samp{
 .img-responsive{
     max-width: 100%;
     padding: 1rem;
+    border-radius: 5px;
     
 }
 .section-div{
@@ -230,6 +231,8 @@ main{
     font-size:.9rem;
 }
 
+
+
 @keyframes sobe_secao {
     from {
         transition: .5s; 
@@ -251,3 +254,28 @@ main{
     }
     
 }
+    /*RESPONSIVIDADE*/
+
+    @media(max-width:992px){
+        .sobre .img_sobre{
+            grid-column: 1/-1;
+            justify-content: center;
+        }
+        .sobre_conteudo{
+            grid-column: 1/-1;
+        }
+        .section-div .img-responsive{
+            display: none;
+        }
+        .section-div{
+            background-image: url(../img/fotoCurriculo2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header .navigation-primary{
+            display: none;
+        }
+        header i{
+            font-size: 2rem;
+        }
+    }
