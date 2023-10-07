@@ -13,11 +13,12 @@ function Escrevendo(){
     
     const titulo= document.querySelector('.digitando')
     active_words(titulo)
-
 }
 
-const menu = document.querySelector('.menu-bars')
+const navMenu = document.querySelector('.navigation-primary')
+const menu = document.querySelector('.fa-bars')
 
 menu.addEventListener('click',()=>{
     menu.classList.toggle('fa-x')
+    navMenu.classList.toggle('ativado')
 })

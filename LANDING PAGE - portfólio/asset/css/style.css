@@ -29,29 +29,46 @@ header h1{
     color:rgba(16, 16, 16, 0.6);
     font-size: 2.5rem;
 }
-ul.navigation-primary{
+
+/* MENU*/
+
+ ul.navigation-primary{
     display: flex;
-    gap: 12px;
+    gap: 30px;
+    align-items: center;
 
 }
-a.link-item{
+
+
+.link-item{
     color: #62928f;
     font-size: 1.1rem;
+    width: 0px;
+    height: 0px;
 }
-.link-item:hover{
+
+.link-item::after {
+content: "";
+width: 0px;
+height: 0px;
+border-bottom: 4px solid transparent;
+display: block;
+transition: .9s;
+}
+
+.link-item:hover::after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid #0e7902ad;
+}
+a.link-item:hover{
    color: #88ddd7f9;
 }
 header samp{
     color: #fff;
-}
+}  
 
-
-.img-responsive{
-    max-width: 100%;
-    padding: 1rem;
-    border-radius: 5px;
-    
-}
 .section-div{
     animation: inicializar 7s forwards;
     display: grid;  
@@ -289,8 +306,6 @@ main{
     background-color: #1a4e55;
     align-content: center;
     border-radius: 6px;
-
-
    }
 
    .my_services ul li i{
@@ -317,13 +332,13 @@ main{
     width: 0px;
     height: 0px;
     position: absolute;
-    top: -1px;
-    right: -1px;
+    top: -2px;
+    right: -2px;
     border-top: 2px solid transparent;
     border-right: 2px solid transparent;
    }
 
-   my_services li::after{
+   .my_services li::after{
     content: '';
     transition: .5s ease-in-out;
     border-radius: 6px;
@@ -367,24 +382,50 @@ main{
     /*RESPONSIVIDADE*/
 
     @media(max-width:992px){
+        
         .sobre .img_sobre{
+           
             grid-column: 1/-1;
             justify-content: center;
         }
+      
         .sobre_conteudo{
             grid-column: 1/-1;
         }
+       
         .section-div .img-responsive{
             display: none;
         }
+       
         .section-div{
-            background-image: url(../img/fotoCurriculo2.png);
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        header{
+            justify-content: space-around;
+            padding: 30px 70px;
+        }
+       
         header .navigation-primary{
             display: none;
         }
+
+        header .navigation-primary.ativado{
+            position: absolute;
+            display: grid;
+            top: 30px;
+            padding: 30px;
+            font-size:1.6rem;
+            z-index: 1;
+            right: 20px;
+            background-color: #005155;
+            color:#62928f;
+            font-weight: bold;
+            border-radius: 0 0 4px 4px;
+            animation:sobe_secao .8s ease-in-out forwards;
+        }
+      
         header i{
             font-size: 2rem;
         }
