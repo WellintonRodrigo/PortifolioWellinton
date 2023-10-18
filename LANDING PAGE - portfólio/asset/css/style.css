@@ -70,7 +70,7 @@ header samp{
 }  
 
 .section-div{
-    animation: inicializar 7s forwards;
+    /*animation: inicializar 7s forwards;*/
     display: grid;  
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
@@ -136,10 +136,6 @@ header samp{
 }
 
 /*seção principal sobre mim*/
-
-main{
-    background-image: var(--gradiente);
-}
 .img_sobre{
     max-width: 100%;
 }
@@ -279,7 +275,6 @@ main{
    .services {
     margin-top: -30px;
     padding: 60px;
-    background-image: var(--gradiente);
    }
 
    .my_services{

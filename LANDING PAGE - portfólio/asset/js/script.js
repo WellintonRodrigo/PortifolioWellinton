@@ -1,7 +1,7 @@
-
-function Escrevendo(){
+   const titulo= document.querySelector('.digitando')
 
     function active_words(elemento){
+
         let arrText= elemento.innerHTML.split('')
         elemento.innerHTML=''
         arrText.forEach((letra, i)=>{
@@ -10,11 +10,9 @@ function Escrevendo(){
             }, 75 * i)
         })
     }
-    
-    const titulo= document.querySelector('.digitando')
-    active_words(titulo)
-}
 
+   active_words(titulo)
+   
 const navMenu = document.querySelector('.navigation-primary')
 const menu = document.querySelector('.fa-bars')
 
