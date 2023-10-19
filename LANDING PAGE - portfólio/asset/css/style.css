@@ -167,7 +167,7 @@ header samp{
      padding: 2px;
 }
 
-.sobre_titulo  .buttons{
+.sobre_titulo  .buttons .sobre_education{
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -374,6 +374,143 @@ header samp{
     justify-content: center;
     padding: 2px;
 }
+
+/*EXPERIENCIA*/
+
+.sobre_education{
+        font-size:2.5rem;
+        color :#192418;
+        margin-bottom: 15px;
+        font-family: "Berkshire Swash", cursive;
+        text-align: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 2px;
+}
+
+.resumo_generico{
+    padding:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+.resumo_generico h2{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #5c6f6a;
+    justify-self: start;
+    padding: 10px;
+    border-radius:4px;
+}
+.resumo_generico h2 i{
+    margin-right: 10px;
+}
+
+.experiences{
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.curso_sup{
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.experience_content ul{
+    color:#0e7902ad;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;    
+    margin-top: 20px;
+    justify-content: center;
+}
+.resumo_generico .experience_content div{
+    background-color:#1a4e55;
+    padding: 40px;
+    position: relative;
+}
+.resumo_generico .experience_content div::before{
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #1a4e55;
+    position: absolute;
+    top: -20px;
+    left:30px;
+    display: inline-block;
+}
+
+.resumo_generico .experience_content div span{
+        color:#003553;
+        font-family: 'Poppins';
+        font-weight: bold;
+}
+
+.resumo_generico .experience_content div h3{
+    font-family: 'Poppins';
+    margin:10px 0;
+    color: #002540;
+}
+
+.resumo_generico .experience_content div p{
+    color: #000;
+    font-family: 'Poppins';
+   font-size: 1.2rem;
+}
+
+/*CURSOS*/
+
+.resumo_generico .cursos_content div{
+    background-color:#1a4e55;
+    padding: 40px;
+    position: relative;
+}
+
+.cursos_content ul{
+    color:#0e7902ad;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;    
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.resumo_generico .cursos_content div::before{
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #1a4e55;
+    position: absolute;
+    top: -20px;
+    left:30px;
+    display: inline-block;
+}
+
+.resumo_generico .cursos_content div span{
+    color:#003553;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.resumo_generico .cursos_content div h3{
+font-family: 'Poppins';
+margin:10px 0;
+color: #002540;
+}
+
+.resumo_generico .cursos_content div p{
+color: #000;
+font-family: 'Poppins';
+font-size: 1.2rem;
+}
+
+
+
     /*RESPONSIVIDADE*/
 
     @media(max-width:992px){
