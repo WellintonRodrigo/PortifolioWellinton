@@ -426,8 +426,7 @@ header samp{
 .experience_content ul{
     color:#0e7902ad;
     gap: 10px;
-    display: flex;
-    cursor: pointer;    
+    display: flex;  
     margin-top: 20px;
     justify-content: center;
 }
@@ -475,8 +474,7 @@ header samp{
 .cursos_content ul{
     color:#0e7902ad;
     gap: 10px;
-    display: flex;
-    cursor: pointer;    
+    display: flex;    
     margin-top: 20px;
     justify-content: center;
 }
@@ -509,6 +507,107 @@ font-family: 'Poppins';
 font-size: 1.2rem;
 }
 
+/*RODAPE*/
+
+.footer-content{
+    display: flex;
+    height: auto;
+    padding-top:40px;   
+    color: #8cc4c7;
+    background-color: #5c6f6a;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-titulo{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #192418;
+    font-family:"poppins";
+}
+
+.footer-contato{
+    font-size: 1.2rem;
+    padding: 3px;
+}
+
+.social-icons{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.social-icons li{
+    margin: 10px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.social-icons a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.social-icons a:hover i{
+    color: aqua;
+
+}
+
+.footer-bottom{
+    background-color: #5c6f6a;
+    padding: 20px; 
+    padding-bottom: 75px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+ .footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+ }
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+ .menu-footer{
+    float: right;
+
+  }
+  
+  .menu-footer ul{
+    display: flex;
+    gap: 4px;
+  }
+  
+  .menu-footer ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .menu-footer ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+  }
+  
+  .menu-footer ul li a:hover{
+    color: #27bcda;
+  }
 
 
     /*RESPONSIVIDADE*/
@@ -561,4 +660,11 @@ font-size: 1.2rem;
         header i{
             font-size: 2rem;
         }
+    
+        .menu-footer ul{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    
     }
