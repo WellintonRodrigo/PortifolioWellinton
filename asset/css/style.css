@@ -4,6 +4,8 @@
 :root{
     --gradiente: radial-gradient(circle at -20.44% 56.16%, #767b78 0, #6a7571 10%, #5c6f6a 20%, #4c6964 30%, #39615e 40%, #1f5959 50%, #005155 60%, #004953 70%, #004252 80%, #003b53 90%, #003553 100%);
 }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +26,7 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: #005155;
+    scroll-behavior: smooth;
 }
 header h1{
     color:rgba(16, 16, 16, 0.6);
@@ -146,6 +149,7 @@ header samp{
     gap: 30px;
     justify-content: center;
     padding:40px;
+    scroll-behavior: smooth;
 }
 
 .sobre_titulo{
@@ -275,6 +279,7 @@ header samp{
    .services {
     margin-top: -30px;
     padding: 60px;
+    scroll-behavior: smooth;
    }
 
    .my_services{
@@ -508,6 +513,9 @@ font-size: 1.2rem;
 }
 
 /*RODAPE*/
+#contatos footer{
+    scroll-behavior: smooth;
+}
 
 .footer-content{
     display: flex;
